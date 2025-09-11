@@ -14,11 +14,11 @@ function App() {
           style={{width: '80px', height: '50px', padding: '7px', borderRadius: '5px', fontSize: '20px', marginLeft: '10px'}}>Add</button>
         </form>
 
-        <ul>
-          <li>
-            <span>FIRST TODO</span>
+        <ul className='allTodos'>
+          <li className='singleTodo'>
+            <span className='todoText'>FIRST TODO</span>
             <button
-            style={{fontSize: '20px', marginTop: -5, borderRadius : '10px', padding: '10px', border: '1px solid white', backgroundColor: 'red', marginLeft: '20px', marginRight: '10px'}}
+            style={{fontSize: '20px', borderRadius : '40px', padding: '10px', border: '3px solid white', backgroundColor: 'red', marginLeft: '20px', marginRight: '10px'}}
             >Delete</button>
           </li>
         </ul>

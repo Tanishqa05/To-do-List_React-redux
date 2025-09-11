@@ -20,3 +20,24 @@
 .App-link {
   color: #61dafb;
 }
+
+.allTodos {
+  list-style-type: none;
+  padding: 0;
+  width: 50%;
+  margin: 20px;
+}
+
+.singleTodo {
+  background-color: #55ead6;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoText {
+  color: black;
+}
