@@ -5,7 +5,7 @@ export const AddTodoActions = (todo) => (dispatch, getState) => {
 
     const hasTodo = todos.find((i) => i.todo === todo);
 
-        if (!hasTodo && todo != "") {
+        if (!hasTodo && todo !== "") {
             dispatch({
                 type: "ADD_TODO",
                 payload: [ {id: todo, todo} ,...todos],
