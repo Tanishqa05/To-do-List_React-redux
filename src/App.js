@@ -12,6 +12,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(AddTodoActions(todo));
+      setTodo(''); // Clear the input after adding
   };
 
   const removeHandler = (t) => {
@@ -27,6 +28,7 @@ function App() {
           <input type="text" placeholder='Add your task'
           style={{width: '300px', height: '30px', padding: '10px', borderRadius: '5px', fontSize: '20px'}}
           onChange={(e) => setTodo(e.target.value)}
+            value={todo} // Add this line
           />
           <button type='submit'
           style={{width: '80px', height: '50px', padding: '7px', borderRadius: '5px', fontSize: '20px', marginLeft: '10px'}}>
